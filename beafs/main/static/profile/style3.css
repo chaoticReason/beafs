@@ -1,0 +1,129 @@
+.profile{
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+figure{
+  margin: 0;
+}
+
+.avatar figure img{
+  width: 290px;
+  height: 290px;
+}
+.info{
+  margin-left: 55px;
+}
+.info-details{
+  display: flex;
+}
+article{
+  max-width: 360px;
+  margin-right: 45px;
+}
+h1{
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 20px;
+  letter-spacing: 0.04em;
+}
+h2{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 9px;
+}
+section{
+  margin: 0;
+  margin-bottom: 9px;
+}
+p{
+  margin: 0;
+  margin-bottom: 6px;
+}
+span{
+  font-weight: 600;
+  line-height: 20px;
+}
+
+/*///// f o r m /////*/
+.password p{
+  height: 27px;
+  margin-bottom: 6px;
+}
+.psw-hidden{
+  display:none;
+}
+#psw_form button{
+  margin:0;
+  padding:0;
+}
+#psw-title{
+  width: 147px;
+  height: 20px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+
+.psw-input{
+  width: 150px;
+  margin-left: 1px;
+  height: 20px;
+  border-bottom: 1px solid #000;
+}
+.psw-input:focus{
+  border-bottom: 2px solid #000;
+}
+#psw-submit{
+  margin: 0;
+  padding: 0;
+  height: 20px;
+}
+#psw-title:hover, #psw-submit:hover{
+  border-bottom: 1px solid #000;
+}
+
+
+/*//// p l a y l i s t s ////////*/
+
+#profile-hr{
+  max-width: 900px;
+  color: black;
+  background-color: black;
+  border: 0;
+  height: 1px;
+  margin: 70px 0 70px 0;
+}
+
+.profile-playlists h1{
+  font-weight:600;
+  font-size: 24px;
+  margin-bottom: 25px;
+  letter-spacing: 0.02em;
+}
+
+.playlist-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+
+}
+.playlist-item{
+  margin: 0 55px 26px 0;
+  cursor: pointer;
+}
+.playlist-item .thumbnail{
+  width: 160px;
+  height: 160px;
+  border: 1px solid #000;
+}
+figcaption{
+  margin: 0;
+  margin-top: 8px;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+}

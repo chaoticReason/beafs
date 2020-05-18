@@ -1,0 +1,36 @@
+{% extends "main/wrapper.html" %}
+
+{%load static%}
+
+{% block title %}
+  <title>story</title>
+{% endblock %}
+
+{% block style %}
+  <link rel="stylesheet" href="{% static 'story/style.css' %}" type="text/css">
+{% endblock %}
+
+{% block content %}
+<section class="content">
+  <div class="Ashley">
+    <img src="{% static 'story/ashley.jpg' %}"/>
+    <p>Ashley Montagu looks at you kindly</p>
+  </div>
+  <div class="text">
+    <h1>Full story of creation</h1>
+      <p>Beafs.com is Anastasia Stankevich’s making, started as term paper on second year of bsuir.</p>
+    <p><span>The idea</span><br>
+    My friend Arinochka was inflamed with term paper theme and suggest that she’ll participate. I agreed. Then we brainstormed and came up with a minimalistic player and a map application to find a company when going to some place. I felt in love with such smart map and she highly appreciated my player. We started to persuaded each other to take each ones’ projects. Finally I threw up a coin and that how we made our choice.</p>
+    <p><span>Process. Part 1</span><br>
+    Doing all correct means start with a plan, with a block-scheme. By video calls to South Korea where Arinochka studied I discuss my thoughts and she offered her vision. By two month we had design of music player page. Unfortunately, Arina couldn’t fully participate because of midterm exams she had. I continued alone. So, now is a moment to say big thanks to her, I enjoyed the time.</p>
+    <p><span>Process. Part 2</span><br>
+    In a month design was finished. After watching tutorials I wrote the back-end and front-end.</p>
+    <p><span>Why is Ashley Montagu here?</span><br>
+    There isn’t any rational reason, I just wanna handsome man on my page.</p>
+  </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+  {% include "main/includes/footer.html" %}
+{% endblock %}

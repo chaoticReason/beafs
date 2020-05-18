@@ -1,0 +1,67 @@
+{% extends "main/wrapper.html" %}
+{% load static %}
+
+{% block title %}
+  <title>profile</title>
+{% endblock %}
+
+{% block style %}
+  <link rel="stylesheet" href="{% static 'profile/style3.css' %}" type="text/css">
+{% endblock %}
+
+{% block content %}
+<div class="profile">
+  <div class="avatar">
+    <figure>
+      <img src="{% static '/profile/ava.jpg' %}">
+    <figure>
+  </div>
+  <div class="info">
+    <h1>{{ prof.nickname }}</h1>
+    <div class="info-details">
+      {% autoescape on %}
+      <article>
+        <section><p><span>first entrance</span>  {{ prof.created_at|date:"b j,  Y" }}</p></section>
+        <section><p><span>email</span>  {{ prof.email }}</p></section>
+        <section><p><span>gender</span>  {{ prof.gender }} </p></section>
+        <section><p><span>birthday year</span>  {{ prof.year_birth|date:"Y" }}</p></section>
+        <section><p><span>interests</span> {{ prof.interests }}</p></section>
+        <section><p><span>bio</span> {{ prof.bio }}</p></section>
+      </article>
+      {% endautoescape %}
+      <div class="password">
+        <h2>settings</h2>
+        <button onclick="togglePsw()"><p id="psw-title">change password</p></button>
+        <form id="psw-form" class="psw-hidden" action="{% url 'main:profile' prof.pk %}" method="post">
+          {% csrf_token %}
+          {% for field in form %}
+              <p><span>{{field.label}}</span> {{ field }}</p>
+          {% endfor %}
+          <button type="submit"><p id="psw-submit">save</p></button>
+        </form>
+        {% if error_message %}
+          <p><span>{{ error_message }}</span></p>
+        {% endif %}
+      </div>
+        <script async type="text/javascript">
+          function togglePsw() {
+            document.getElementById("psw-form").classList.toggle("psw-hidden");
+          }
+        </script>
+    </div>
+  </div>
+</div>
+<hr id="profile-hr">
+<div class="playlist-items">
+  {% for playlist in playlists %}
+  <figure class="playlist-item">
+    <a href="/{{prof.pk}}/profile/{{playlist.playlist_id}}"><img class="thumbnail" src="{{playlist.cover.url }}"></a>
+    <figcaption>{{playlist.playlist_name}}</figcaption>
+  </figure>
+  {% endfor %}
+  </div>
+{% endblock %}
+
+{% block footer %}
+{% include "main/includes/footer.html" %}
+{% endblock %}

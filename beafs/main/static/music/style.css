@@ -1,0 +1,58 @@
+::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}
+
+html {
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+html,body{
+  overflow: hidden;
+}
+section{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.song img{
+  width: 400px;
+  height: 400px;
+}
+.song h1{
+  margin-top: 35px;
+  margin-bottom: 15px;
+  padding:0;
+  font-weight: bold;
+  font-size: 36px;
+  color: #fff;
+}
+.song-title{
+  line-height: 42px;
+  padding: 0 8px;
+  background: #000;
+}
+.song h2{
+  margin:0;
+  padding:0;
+  font-weight: 500;
+  font-size: 24px;
+}
+.lyrics-container{
+  width: 410px;
+  margin-left: 55px;
+  overflow: auto;
+}
+.lyrics{
+  width: 365px;
+  height: 510px;
+}
+.lyrics p{
+  margin: 20;
+  padding:0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}

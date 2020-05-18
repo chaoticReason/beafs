@@ -1,0 +1,45 @@
+h1{
+  margin-top:0;
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 49px;
+  letter-spacing: 0.02em;
+}
+span{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 100px;
+
+}
+.Ashley{
+  padding-left: 0;
+}
+figure{
+  margin:0;
+}
+img{
+  max-width: 350px;
+  height: auto;
+}
+.Ashley p{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 6px;
+}
+
+.text{
+  margin-left: 80px;
+  max-width: 530px;
+  min-width: 300px;
+}

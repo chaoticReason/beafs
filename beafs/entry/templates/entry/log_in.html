@@ -1,0 +1,37 @@
+{% extends "entry/wrapper.html" %}
+
+
+{% block title %}
+  <title>log in</title>
+{% endblock %}
+
+{% block code %}
+	<div class="wrap-input100 validate-input">
+		<input id="email" class="input100" type="email" name="email" placeholder="email address">
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input kup">
+		<input id="password" class="input100" type="password" name="password" placeholder="password">
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="container-login100-form-btn">
+		<div class="wrap-login100-form-btn">
+			<div class="login100-form-bgbtn"></div>
+			<button disabled id="btn" class="login100-form-btn">
+				log in
+			</button>
+		</div>
+
+		<p class="dis-block txt3">
+			 <a href="/entry/sign_up" class=" hov1">don't have an account? sign up</a>
+		</p>
+	</div>
+{% endblock %}
+
+{% load static %}
+
+{% block script %}
+  <script src="{% static 'entry/js/scriptsimple.js' %}"></script>
+{% endblock%}

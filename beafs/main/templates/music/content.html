@@ -1,0 +1,37 @@
+{% extends "main/wrapper.html" %}
+
+{%load static%}
+
+{% block title %}
+  <title>music</title>
+{% endblock %}
+
+{% block style %}
+  <link rel="stylesheet" href="{% static '/music/style.css' %}" type="text/css">
+  <link href="{% static '/player/style.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<section>
+  <figure class="song">
+    <img id="longforcover" src="">
+    <h1><span id="fortitle" class="song-title">text</span></h1>
+    <h2 id="forartist">text</h2>
+  </figure>
+  {% filter linebreaks%}
+  <div class="lyrics-container">
+    <div id="forlyrics" class="lyrics">
+          {{music.0.lyrics}}
+    </div>
+  </div>
+  {% endfilter %}
+</section>
+
+{% endblock %}
+
+{% block player %}
+{% include "main/includes/player.html" %}
+{% endblock %}
+
+{block footer}
+{endblock}

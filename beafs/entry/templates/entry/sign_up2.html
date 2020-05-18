@@ -1,0 +1,26 @@
+{% extends "entry/wrapper.html" %}
+
+
+{% block title %}
+  <title>sign up</title>
+{% endblock %}
+
+{% block code %}
+  {{ form.as_p }}
+  <div class="container-login100-form-btn">
+    <div class="wrap-login100-form-btn">
+      <div class="login100-form-bgbtn"></div>
+      <button id="btn" class="login100-form-btn">
+        sign up
+      </button>
+    </div>
+
+    <p class="dis-block txt3">
+       <a href="/entry/log_in" class=" hov1">already have an account? log in</a>
+    </p>
+{% endblock %}
+
+{% load static %}
+
+{% block script %}
+{% endblock%}

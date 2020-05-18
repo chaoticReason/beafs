@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+::placeholder {
+  color: #000;
+  font-weight: 200;
+  font-size: 12px;
+  opacity: 1;
+}
+
+.search {
+  width: 570px;
+  position: absolute;
+  top: 9px;
+  left: 29%;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  padding: 8px;
+  font-weight: 500px;
+  font-size: 16px;
+  color: #000;
+  border: none;
+}
+
+.searchTerm:focus{
+  color: #000;
+  outline:none;
+}
+
+.searchButton {
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+  font-size: 20px;
+  background: #fff;
+  border: 0;
+}
+
+.search-img{
+  height: 19px;
+}

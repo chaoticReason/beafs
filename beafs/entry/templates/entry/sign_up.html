@@ -1,0 +1,47 @@
+{% extends "entry/wrapper.html" %}
+
+
+{% block title %}
+  <title>sign up</title>
+{% endblock %}
+
+{% block code %}
+		<div class="wrap-input100 validate-input">
+			<input id="email" class="input100 id-input" type="email" name="email" placeholder="email address">
+			<span class="focus-input100"></span>
+		</div>
+
+		<div class="wrap-input100 validate-input">
+			<input id="nickname" class="input100 id-input" type="text" name="nickname" placeholder="nickname">
+			<span class="focus-input100"></span>
+		</div>
+
+		<div class="wrap-input100 validate-input">
+			<input id="password" class="input100" type="password" name="password" placeholder="password">
+			<span class="focus-input100"></span>
+		</div>
+
+		<div class="wrap-input100 validate-input">
+			<input id="auth" class="input100" type="password" name="auth" placeholder="repeat password">
+			<span class="focus-input100"></span>
+		</div>
+
+		<div class="container-login100-form-btn">
+			<div class="wrap-login100-form-btn">
+				<div class="login100-form-bgbtn"></div>
+				<button disabled id="btn" class="login100-form-btn">
+					sign up
+				</button>
+			</div>
+
+			<p class="dis-block txt3">
+				 <a href="/entry/log_in" class=" hov1">already have an account? log in</a>
+			</p>
+		</div>
+{% endblock %}
+
+{% load static %}
+
+{% block script %}
+	<script src="{% static 'entry/js/script3.js' %}"></script>
+{% endblock%}
