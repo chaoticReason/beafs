@@ -4,10 +4,8 @@
 Если я продолжу проект, то добавлю алгоритм подбора музыки, основанный на личных интересах. Прототипом создания и вдохновением стали музыкальные платформы spotify, yandex.music, soundcloud. <br/> <br/>
 
 <b> Контекст </b> </br>
-Сайт является курсовой работой Анастасии Станкевич (Anastasia Stankevich) за 4 семестр в БГУИР.
-
-Frontend: HTML, CSS, JavaScript, JQuery
-
+Сайт является курсовой работой Анастасии Станкевич (Anastasia Stankevich) за 4 семестр в БГУИР.<br/>
+Frontend: HTML, CSS, JavaScript, JQuery<br/>
 Backend: Python 3 Django <br/> <br/>
 
 
